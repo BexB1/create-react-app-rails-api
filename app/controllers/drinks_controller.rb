@@ -11,4 +11,3 @@ class DrinksController < ApiController
     render json: @drink.to_json(:include => { :ingredients => { :only => [:id, :description] }})
   end
 end
-view raw
